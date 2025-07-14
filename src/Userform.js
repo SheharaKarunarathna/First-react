@@ -1,7 +1,6 @@
-import { Button, Container, Grid, Input } from "@mui/material";
+import { Button, Container, Grid, Input, Typography } from "@mui/material";
 
-const Userform = () => {
-    container
+const Userform = props => {
     return(
         <Grid
             container
@@ -13,10 +12,10 @@ const Userform = () => {
             }}
         >
             <Grid item xs= {12}> 
-                <Tipography component = {'h1'} sx={{color: '#000000'}}>User Form</Tipography>
+                <Typography component = {'h1'} sx={{color: '#000000'}}>User Form</Typography>
             </Grid>
             
-            <Grid>
+            <Grid item xs= {12} sm = {6} sx={{display: 'flex'}}>
                 <Typography 
                 component={'label'} 
                 htmlFor="id"
@@ -40,6 +39,30 @@ const Userform = () => {
                 />
             </Grid>
             
+            <Grid item xs= {12} sm = {6} sx={{display: 'flex'}}>
+                <Typography 
+                component={'label'} 
+                htmlFor="id"
+                sx={{color: '#000000',
+                    marginRight: '20px',
+                    fontSize: '16px',
+                    width: '100px',
+                    display: 'block',
+                }}
+                >
+                    Name
+                </Typography>
+                <Input
+                    type= "text"
+                    id= 'name'
+                    name = 'name'
+                    sx={{ width: '400px'}}
+                    value={''}
+                    onChange={e => {}}
+
+                />
+            </Grid>
+
             <Button
                 sx={{
                     margin:'auto',
@@ -49,7 +72,7 @@ const Userform = () => {
                     marginLeft: '15px',
                     marginTop: '20px',
                     '&:hover':{
-                        opacity: 0.7,
+                        opacity: '0.7',
                         backgroundColor: '#00c6e6',
                     }
                 }}
