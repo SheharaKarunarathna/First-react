@@ -1,18 +1,18 @@
-import { Button, Container, Grid, Input, Typography } from "@mui/material";
+import { Button, Card, Container, Grid, Input, Typography } from "@mui/material";
 
 const Userform = props => {
     return(
         <Grid
             container
-            spacing= {2}
+            spacing= {6}
             sx={{
-                backgroundColor: '#ffffff',
-                marginBottom: '30px',
+                backgroundColor: '#b0e0e6',
+                marginBottom: '20px',
                 display: 'block',
             }}
         >
-            <Grid item xs= {12}> 
-                <Typography component = {'h1'} sx={{color: '#000000'}}>User Form</Typography>
+            <Grid item xs= {20}> 
+                <Typography component = {'h6'} sx={{color: '#000000' , fontSize:'20px'} }>User Form</Typography>
             </Grid>
             
             <Grid item xs= {12} sm = {6} sx={{display: 'flex'}}>
