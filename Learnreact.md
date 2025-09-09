@@ -75,3 +75,29 @@ marginBottom: '30px' → space below the grid.
 >
 ```
 ***
+
+## Understanding the APP.js file structure
+```.js
+import {useNavigate} from 'react-router-dom';
+import './App.css';
+function App() {
+  const navigate = useNavigate();
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1> login!</h1>
+        <button className ='Hi-button' onClick={() => navigate('/users')}> Say Hi </button>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Explaination
+1. We have to import useNavigate React-router-hook to manage routing among pages. Since we have to planned route to other pages from Home page we should import useNavigate from react router dom package.
+2. Since we have decorated App.js file in App.css file we should import it in App.js file. Importing that takes decorations into the page.
+3. We create a function named App and create a hook to useNavigate named navigate by this when we navigate from one to another we can navigate.
+4. In return function, we create the body of App.js .
+5. In onClick we make when we click Hi-button navigate to users page.
