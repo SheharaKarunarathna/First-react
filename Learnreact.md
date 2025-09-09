@@ -101,3 +101,13 @@ export default App;
 3. We create a function named App and create a hook to useNavigate named navigate by this when we navigate from one to another we can navigate.
 4. In return function, we create the body of App.js .
 5. In onClick we make when we click Hi-button navigate to users page.
+
+### Important about routing
+```
+In the App.js file we navigated the button to users page. But it is not enough we should route to the certain page. Otherwise we can't go to that page. If we just create the route and don't make the navigate in App file we can go to the users page only by adding /users to the url. Can not do it by clicking.
+```
+
+*Point*
+* In a return in jsx we can't add two components so that we should add both into one Grid or Box. So what we do is import Box or Grid from MUI and add both components into it. (Kind of wrapping up)
+* 
+  
